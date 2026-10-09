@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TurnBasedRpgGame/TurnBasedRpgGame.vcxproj" Id="57c7295d-4c57-4ef7-abf1-3a3654efadc1" />
+</Solution>
