@@ -7,7 +7,7 @@
 int main()
 {
 	std::cout << "===================================" << std::endl;
-	std::cout << "=========Brave the dungeon=========" << std::endl;
+	std::cout << "======== Brave the dungeon ========" << std::endl;
 	std::cout << "===================================" << std::endl << std::endl;
 
 	while (true)

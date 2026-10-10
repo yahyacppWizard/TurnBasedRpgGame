@@ -20,10 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\headers\player\actions\Attack.cpp" />
+    <ClCompile Include="src\headers\player\actions\EntityStatus.cpp" />
     <ClCompile Include="src\headers\player\actions\Heal.cpp" />
     <ClCompile Include="src\headers\player\actions\Run.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Options.cpp" />
+    <ClCompile Include="src\headers\player\actions\Options.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\enemy\Entity.h" />
