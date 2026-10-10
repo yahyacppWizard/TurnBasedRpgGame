@@ -18,6 +18,11 @@ int main()
 		
 		goblin.summonGoblin();
 
+		if (knight.health <= 0)
+		{
+			break;
+		}
+
 	}
 	std::cin.get();
 }

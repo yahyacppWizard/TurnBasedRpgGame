@@ -33,6 +33,9 @@
     <ClCompile Include="src\headers\player\actions\EntityStatus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\headers\enemy\GoblinAttack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\enemy\Goblin.h">
