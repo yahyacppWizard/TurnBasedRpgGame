@@ -14,7 +14,7 @@ void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight)
 
 	if (knight.health <= 0)
 	{
-		std::cout << "You are dead!" << std::endl;
+		std::cout << "You are dead!" << std::endl << std::endl;
 	}
 	else
 	{
