@@ -1,18 +1,10 @@
+
 #pragma once
-#include "Entity.h"
-void selectOptions();
-void summonGoblin();
+#include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/enemy/Entity.h"
 
 class Goblin : public Entity
 {
 public:
-	void summonGoblin()
-	{
-		std::cout << "You have encountered a Goblin!" << std::endl << std::endl;
-	    selectOptions();
-	}
 
+    
 };
-
-
-

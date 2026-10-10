@@ -3,7 +3,7 @@
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/enemy/Entity.h"
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/player/Knight.h"
 void EntityStatus(int goblinHealth, int knightHealth);
-void selectOptions();
+void selectOptions(Goblin& goblin, Entity& entity, Knight& knight);
 
 void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight)
 {
@@ -18,7 +18,7 @@ void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight)
 	}
 	else
 	{
-		selectOptions();
+		selectOptions(goblin, entity, knight);
 	}
 	
 }

@@ -2,6 +2,7 @@
 #include "headers/enemy/Goblin.h"
 #include "headers/enemy/Entity.h"
 #include "headers/player/Knight.h"
+void summonGoblin(Goblin& goblin, Entity& entity, Knight knigth);
 
 
 int main()
@@ -16,7 +17,7 @@ int main()
 		Entity entity;
 		Knight knight;
 		
-		goblin.summonGoblin();
+		summonGoblin(goblin, entity, knight);
 
 		if (knight.health <= 0)
 		{

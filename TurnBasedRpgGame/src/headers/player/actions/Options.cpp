@@ -7,11 +7,8 @@ void Attack(Goblin& goblin, Entity& entity, Knight& knight);
 void Heal(Goblin& goblin, Entity& entity, Knight& knight);
 void Run(Goblin& goblin, Entity& entity, Knight& knight);
 
-void selectOptions()
+void selectOptions(Goblin& goblin, Entity& entity, Knight& knight)
 {
-	Goblin goblin;
-	Entity entity;
-	Knight knight;
 
 	int option;
 	std::cout << "======================" << std::endl;
