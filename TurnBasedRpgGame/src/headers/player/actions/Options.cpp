@@ -3,11 +3,11 @@
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/enemy/Entity.h"
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/player/Knight.h"
 
-void Attack(Goblin& goblin, Entity& entity, Knight& knight);
-void Heal(Goblin& goblin, Entity& entity, Knight& knight);
-void Run(Goblin& goblin, Entity& entity, Knight& knight);
+void Attack(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
+void Heal(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
+void Run(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
 
-void selectOptions(Goblin& goblin, Entity& entity, Knight& knight)
+void selectOptions(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning)
 {
 
 	int option;
@@ -24,15 +24,15 @@ void selectOptions(Goblin& goblin, Entity& entity, Knight& knight)
 
 	if (option == 1)
 	{
-		Attack(goblin, entity, knight);
+		Attack(goblin, entity, knight, isGameRunning);
 	}
 	else if (option == 2)
 	{
-		Heal(goblin, entity, knight);
+		Heal(goblin, entity, knight, isGameRunning);
 	}
 	else if (option == 3)
 	{
-		Run(goblin, entity, knight);
+		Run(goblin, entity, knight, isGameRunning);
 	}
 	else
 	{

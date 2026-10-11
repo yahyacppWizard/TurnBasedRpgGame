@@ -4,13 +4,13 @@
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/player/Knight.h"
 
 void EntityStatus(int goblinHealth, int knightHealth);
-void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight);
+void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
 
-void Run(Goblin& goblin, Entity& entity, Knight& knight)
+void Run(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning)
 {
 
 
 	std::cout << "You cannot run from a fight!" << std::endl;
 	EntityStatus(goblin.health, knight.health);
-	goblinAttack(goblin, entity, knight);
+	goblinAttack(goblin, entity, knight, isGameRunning);
 }

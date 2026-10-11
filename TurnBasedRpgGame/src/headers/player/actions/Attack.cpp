@@ -3,9 +3,9 @@
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/enemy/Entity.h"
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/player/Knight.h"
 void EntityStatus(int goblinHealth, int knightHealth);
-void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight);
+void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
 
-void Attack(Goblin& goblin, Entity& entity, Knight& knight)
+void Attack(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning)
 {
 	std::cout << "You attacked the goblin" << std::endl;
 
@@ -14,6 +14,6 @@ void Attack(Goblin& goblin, Entity& entity, Knight& knight)
 	goblin.health -= total_damage_taken;
 
 	EntityStatus(goblin.health, knight.health);
-	goblinAttack(goblin, entity, knight);
+	goblinAttack(goblin, entity, knight, isGameRunning);
 
 }

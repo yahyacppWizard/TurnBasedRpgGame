@@ -4,9 +4,9 @@
 #include "/Dev/TurnBasedRpgGame/TurnBasedRpgGame/src/headers/player/Knight.h"
 
 void EntityStatus(int goblinHealth, int knightHealth);
-void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight);
+void goblinAttack(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning);
 
-void Heal(Goblin& goblin, Entity& entity, Knight& knight)
+void Heal(Goblin& goblin, Entity& entity, Knight& knight, bool& isGameRunning)
 {
 
 
@@ -25,5 +25,5 @@ void Heal(Goblin& goblin, Entity& entity, Knight& knight)
 		knight.health += 20;
 	}
 	EntityStatus(goblin.health, knight.health);
-	goblinAttack(goblin, entity, knight);
+	goblinAttack(goblin, entity, knight, isGameRunning);
 }

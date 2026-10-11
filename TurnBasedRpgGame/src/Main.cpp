@@ -2,7 +2,7 @@
 #include "headers/enemy/Goblin.h"
 #include "headers/enemy/Entity.h"
 #include "headers/player/Knight.h"
-void summonGoblin(Goblin& goblin, Entity& entity, Knight knigth);
+void summonGoblin(Goblin& goblin, Entity& entity, Knight knigth, bool& isGameRunning);
 
 
 int main()
@@ -11,18 +11,15 @@ int main()
 	std::cout << "======== Brave the dungeon ========" << std::endl;
 	std::cout << "===================================" << std::endl << std::endl;
 
-	while (true)
+	bool isGameRunning = true;
+
+	while (isGameRunning)
 	{
 		Goblin goblin;
 		Entity entity;
 		Knight knight;
 		
-		summonGoblin(goblin, entity, knight);
-
-		if (knight.health <= 0)
-		{
-			break;
-		}
+		summonGoblin(goblin, entity, knight, isGameRunning);
 
 	}
 	std::cin.get();
